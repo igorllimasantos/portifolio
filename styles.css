@@ -1,0 +1,295 @@
+/* Reset e Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+/* Seção Principal */
+.caixa-principal {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./img/background.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #191919;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px;
+}
+
+.portfolio {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.portfolio span {
+    color: #f9004d;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #f9004d;
+    transition: 0.5s;
+}
+
+/* Seção de Apresentação */
+.meu-nome {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translateY(-50%);
+}
+
+.meu-nome h1 {
+    color: white;
+    font-size: 60px;
+}
+
+.meu-nome h1 span {
+    color: #f9004d;
+}
+
+.meu-nome h3 {
+    color: white;
+    font-size: 20px;
+}
+
+/* Seção Sobre Mim */
+section {
+    display: flex;
+    align-items: center;
+    padding: 40px 10%;
+    background-color: #000000;
+}
+
+section img {
+    height: 300px;
+    width: 900px;
+    border-radius: 20%;
+    border: 2px solid #0c0c0c;
+    margin-right: 20px;
+}
+
+section div h2 {
+    color: white;
+    font-size: 50px;
+}
+
+section div p {
+    color: #b1adae;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    word-break: break-word;
+}
+
+/* Botões na Seção Sobre Mim */
+section div button {
+    color: white;
+    background: #f9004d;
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+section div button:hover {
+    background-color: black;
+    border: 3px solid #f9004d;
+    transition: 0.5s;
+}
+
+/* Seção Projetos */
+.projetos {
+    background-color: #191919;
+    padding: 40px 0 80px;
+}
+
+.projetos h2 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.card-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    padding: 0 5%;
+}
+
+.card {
+    background-color: #000000;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px 25px;
+    text-align: center;
+}
+
+.card img {
+    height: 80px;
+}
+
+.card h5 {
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.card p {
+    color: #e2b9c6;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    word-break: break-word;
+}
+
+.card a {
+    background-color: #f9004d;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.card a:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+}
+
+/* Rodapé */
+footer {
+    background-color: #000;
+    padding: 80px 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h5 {
+    color: white;
+    font-size: 25px;
+}
+
+footer p {
+    color: white;
+    font-size: 16px;
+    margin: 10px 0 20px;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+}
+
+.social img {
+    height: 20px;
+    border-radius: 50%;
+}
+
+.social a {
+    background-color: #f9004d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.social a:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+   
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .meu-nome {
+        display: none;
+       
+    }
+
+    .meu-nome h1 {
+        font-size: 20px;
+    }
+
+    section {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+
+    section img {
+        display: none;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    section div h2 {
+        font-size: 40px;
+    }
+
+    .card-projetos {
+        padding: 0 2%;
+        margin-top: 30px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    section div button {
+        height: 35px;
+        width: 130px;
+        font-size: 14px;
+        display: block;
+        margin: 20px auto;
+    }
+}
