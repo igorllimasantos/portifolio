@@ -1,16 +1,16 @@
-/* Reset e Configurações Globais */
-* {
+ /* Reset e Configurações Globais */
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Seção Principal */
 .caixa-principal {
     height: 100vh;
     width: 100%;
-    background-image: url(./img/background.png);
+    background-image: url(./img/971.jpg);
     background-size: cover;
     background-position: center;
     background-color: #191919;
@@ -153,7 +153,11 @@ section div button:hover {
 }
 
 .card img {
-    height: 80px;
+    height: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
 }
 
 .card h5 {
@@ -215,6 +219,9 @@ footer p {
 .social img {
     height: 20px;
     border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .social a {
@@ -235,8 +242,6 @@ footer p {
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
-   
-
     nav {
         flex-direction: column;
         align-items: flex-start;
@@ -254,11 +259,6 @@ footer p {
 
     .meu-nome {
         display: none;
-       
-    }
-
-    .meu-nome h1 {
-        font-size: 20px;
     }
 
     section {
@@ -267,7 +267,10 @@ footer p {
     }
 
     section img {
-        display: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 10%;
         margin-bottom: 20px;
         margin-right: 0;
     }
@@ -277,19 +280,6 @@ footer p {
     }
 
     .card-projetos {
-        padding: 0 2%;
-        margin-top: 30px;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    section div button {
-        height: 35px;
-        width: 130px;
-        font-size: 14px;
-        display: block;
-        margin: 20px auto;
+        padding: 0 
     }
 }
