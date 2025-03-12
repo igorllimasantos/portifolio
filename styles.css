@@ -54,6 +54,9 @@ nav ul li a:hover {
     transition: 0.5s;
 }
 
+a{
+    text-decoration: none;
+}
 /* Seção de Apresentação */
 .meu-nome {
     position: absolute;
@@ -144,6 +147,11 @@ section div button:hover {
     padding: 0 5%;
 }
 
+button a{
+    text-decoration: none;
+    color: white;
+}
+
 .card {
     background-color: #000000;
     height: auto;
@@ -189,6 +197,12 @@ section div button:hover {
     background-color: transparent;
     border: 2px solid #f9004d;
 }
+
+
+
+
+
+
 
 /* Rodapé */
 footer {
@@ -274,7 +288,7 @@ footer p {
         margin-bottom: 20px;
         margin-right: 0;
     }
-
+    
     section div h2 {
         font-size: 40px;
     }
